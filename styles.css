@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+:root {
+    --primary-yellow: #FDB927;
+    --lakers-purple: #552583;
+    --background-color-blur: rgba(0, 0, 0, 0.25);
+  }
+  
+  body {
+    background: linear-gradient(-45deg, rgb(57, 31, 105) -2.3%, rgb(115, 43, 155) 44.4%, rgb(116, 49, 197) 103.4%);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-size: 400% 400%;
+    animation: Colorchange 5s ease infinite;
+  }
+  
+  @keyframes Colorchange {
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+
+  .container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    max-height: 500px;
+  }
+  
+  .illustration-1{
+    position: fixed;
+    float: left;
+    margin-left: 305px;
+    margin-top: 10%;
+  }
+
+  .illustration-1 img{
+    width: auto;
+    height: 400px;
+  }
+  .illustration-2{
+    position: fixed;
+    margin-left: 60%;
+    margin-top: 14%;
+  }
+  .illustration-2 img{
+    width: auto;
+    height: 400px;
+  }
+
+  .form-area {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color-blur);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 10%;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+  
+  h3 {
+    color: var(--primary-yellow);
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+  
+  label {
+    display: contents;
+    margin-bottom: 10px;
+    color: var(--primary-yellow);
+    justify-content: space-between;
+  }
+  
+  input:hover{
+    transform: scale(1.15);
+    transition: ease-in-out 0.5s;
+    border-style: none;
+  }
+  section.email-control {
+    margin-bottom: 30px;
+  
+  }
+  
+  section.forgotps-control {
+    font-size: small;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  input[type="checkbox"] {
+    margin-left: 10%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+
+  #forgot-password {
+    color: var(--primary-yellow);
+    margin-right: 40px;
+    display: flex;
+    justify-content: flex-end;
+    font-style: italic;
+    text-decoration: none;
+  }
+
+  #forgot-password:hover {
+    transform: scale(0.9);
+    text-decoration: underline;
+  }
+
+  button {
+    color: var(--lakers-purple);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    width: 17rem;
+    padding: 0.3rem;
+    height: 2.25rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-yellow);
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-style: none;
+    cursor: pointer;
+    transition-property: background, box-shadow;
+    transition-duration: 0.5s;
+  }
+
+  button:hover{
+    box-shadow: 3px 3px 5px 0px #A076F9;
+    text-shadow: 1px 0 #A076F9;
+  }
+
+  button:focus{
+    box-shadow: 0 0 0 5px #A076F9;
+  }
+
+  button:active{
+    transform: scale(0.9);
+  }
+  
+  .signup-control {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+
+span#remember{
+    margin-right: 15%;
+}
+
+.link{
+  color: var(--primary-yellow);
+  margin-left: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link:hover{
+  transform: scale(0.9);
+  text-decoration: underline;
+}
+
+#email,
+#password {
+
+  border-radius: 10px;
+  border-style: solid;
+  border-color: var(--lakers-purple);
+  padding: 10px;
+  width: 70%;
+  text-align: left;
+  background: transparent;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+input[type="email"],
+input[type="password"] {
+  text-align: left;
+  color: white;
+}
